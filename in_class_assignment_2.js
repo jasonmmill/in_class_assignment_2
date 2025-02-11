@@ -31,3 +31,17 @@ function calculateTotalRevenue (sales) {
 }
 
 console.log(calculateTotalRevenue(sales))
+
+// Task 4 - Object Manipulation
+
+let employee = {
+    name: "Jason Miller",
+    salary: 50000,
+    position: "Manager"
+}
+
+function updateSalary(employee, pctIncrease) {
+    return employee.salary + (employee.salary * (pctIncrease / 100 ))
+}
+
+console.log(updateSalary(employee, 10))
